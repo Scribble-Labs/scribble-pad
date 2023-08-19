@@ -1,0 +1,139 @@
+:root {
+  --background-color: #ededed;
+  --box-color: #d4cded;
+  --text-color: #030303;
+  --primary-color: #8368f1;
+  --primary-text-color: #fff;
+  --success-color: #0378cc;
+  --info-color: #0378cc;
+  --warning-color: #fead4f;
+  --error-color: #ff8600;
+  --disabled-color: #999;
+  --transition: all 0.3s;
+  --default-font: "Montserrat", sans-serif;
+  --special-font: "VT323", sans-serif;
+  font-family: var(--default-font);
+  color-scheme: light dark;
+  color: var(--text-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-size: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: unset;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--background-color);
+  justify-content: center;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+button {
+  font-size: 1.25rem;
+  font-family: var(--special-font);
+  transition: var(--transition);
+  border: unset;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+button.primary {
+  animation: small-glow 3s ease-in-out infinite alternate;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+button.secondary {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+button:disabled {
+  background-color: var(--disabled-color);
+  cursor: not-allowed;
+  filter: unset !important;
+}
+input {
+  appearance: none;
+  outline: none;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  background-color: var(--box-color);
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: unset;
+}
+h1,
+h2 {
+  font-family: var(--special-font);
+  text-align: center;
+  color: var(--primary-color);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.box {
+  border-radius: 1rem;
+}
+
+button.wallet-adapter-button {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-text-color) !important;
+  height: 6em;
+  width: 20em;
+  font-size: 1.2rem;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: -200px !important; */
+  margin-right: 100px;
+}
+
+.wallet-adapter-dropdown-list {
+  right: 100px !important;
+  width: 23em !important;
+}
+
+footer {
+  width: 100%;
+  aspect-ratio: 950/540;
+  color: #049cc23c;
+  background-position: bottom;
+  background-size: 100%;
+}

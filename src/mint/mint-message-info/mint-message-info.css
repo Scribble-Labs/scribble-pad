@@ -1,0 +1,40 @@
+.mint-message {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  transition: var(--transition);
+  padding: 1rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  text-align: center;
+
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  align-items: center;
+}
+.mint-message-hide {
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+.mint-message-success {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+.mint-message-info {
+  border-color: var(--info-color);
+  color: var(--info-color);
+}
+.mint-message-warning {
+  border-color: var(--warning-color);
+  color: var(--warning-color);
+}
+.mint-message-error {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+.mint-message-text {
+  white-space: pre-line;
+}

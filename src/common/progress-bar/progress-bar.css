@@ -1,0 +1,14 @@
+.progress-bar {
+  width: 100%;
+  height: 4rem;
+  border-radius: 35px;
+  border: 0.1rem solid var(--primary-color);
+  animation: small-glow 2s ease-in-out infinite alternate;
+  overflow: clip;
+}
+
+.progress-bar-content {
+  background-color: var(--warning-color);
+  height: 100%;
+  transition: var(--transition);
+}

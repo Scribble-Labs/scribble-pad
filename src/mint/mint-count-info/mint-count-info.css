@@ -1,0 +1,56 @@
+.mint-count {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "progress progress"
+    "minted remaining";
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  .mint-count {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "minted progress remaining";
+  }
+}
+
+.mint-count-progress {
+  grid-area: progress;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.mint-count-closed {
+  color: var(--warning-color);
+  font-weight: bold;
+}
+
+.mint-count-minted {
+  grid-area: minted;
+}
+.mint-count-remaining {
+  grid-area: remaining;
+}
+
+.mint-count-stat {
+  color: var(--text-color);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+  min-width: 4.5rem;
+}
+.mint-count-stat-value {
+  font-family: var(--special-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mint-count-stat-value small {
+  font-size: 1rem;
+}
+.mint-count-stat-text {
+  font-size: 0.75rem;
+}

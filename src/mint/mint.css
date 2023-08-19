@@ -1,0 +1,140 @@
+.mint {
+  flex: 1;
+  width: 100%;
+  max-width: 90vw;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 87.5vh !important;
+}
+
+.mint-box {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.mint-box-image {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 1rem;
+}
+
+.mint-loading {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mint-group {
+  font-family: var(--special-font);
+  color: var(--primary-color);
+}
+
+.mint-button {
+  font-weight: bold;
+  width: 35%;
+  height: 5rem;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  background-color: #8368f1;
+}
+
+.mint-nfts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mint-container {
+  display: flex;
+  flex-direction: row;
+  min-width: 750px;
+  max-width: 1500px;
+  flex-wrap: wrap !important;
+}
+
+.mint-container > div {
+  width: 50%;
+  padding: 2em;
+  font-size: 1.5rem;
+}
+
+.mint-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 0.7em;
+}
+
+.flex-row div {
+  color: #b99eef;
+  border: 3px solid #fead4f;
+  border-radius: 1em;
+  padding: 0.8em;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.main-header {
+  font-family: "Abril Fatface", cursive;
+  font-size: 10rem;
+  color: #000000;
+  text-align: left;
+}
+
+.bg-purple {
+  background-color: #d4cdec;
+  border-radius: 16px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3.3em;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+}
+
+.flex-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 40%;
+}
+p {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: left;
+}
+
+.copy-main {
+  font-size: 2rem;
+  margin: 0 !important;
+}

@@ -1,0 +1,17 @@
+.mint-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mint-date-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.mint-date-title-closed {
+  padding: 1rem;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 1rem;
+}

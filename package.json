@@ -1,0 +1,42 @@
+{
+  "name": "candy-machine-v3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.18.3",
+    "@metaplex-foundation/mpl-candy-machine": "^6.0.0-alpha.18",
+    "@metaplex-foundation/mpl-toolbox": "^0.8.0",
+    "@metaplex-foundation/umi": "^0.8.7",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.8.7",
+    "@metaplex-foundation/umi-signer-wallet-adapters": "^0.8.7",
+    "@solana/spl-token": "^0.3.7",
+    "@solana/wallet-adapter-base": "^0.9.20",
+    "@solana/wallet-adapter-react": "^0.15.28",
+    "@solana/wallet-adapter-react-ui": "^0.9.27",
+    "@solana/wallet-adapter-wallets": "^0.19.10",
+    "@solana/web3.js": "^1.73.0",
+    "clsx": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "assert": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "stream": "^0.0.2",
+    "typescript": "^4.6.4",
+    "util": "^0.12.5",
+    "vite": "^3.2.3"
+  }
+}

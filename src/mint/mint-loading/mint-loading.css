@@ -1,0 +1,31 @@
+.loader.loader-show {
+  opacity: 1;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  transition: var(--transition);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  box-shadow: 2rem 0 var(--primary-color), -2rem 0 var(--primary-color);
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: var(--text-color);
+    box-shadow: 2rem 0 var(--text-color), -2rem 0 var(--primary-color);
+  }
+  50% {
+    background-color: var(--primary-color);
+    box-shadow: 2rem 0 var(--text-color), -2rem 0 var(--text-color);
+  }
+  100% {
+    background-color: var(--text-color);
+    box-shadow: 2rem 0 var(--primary-color), -2rem 0 var(--text-color);
+  }
+}

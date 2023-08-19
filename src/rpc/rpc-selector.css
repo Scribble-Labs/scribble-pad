@@ -1,0 +1,20 @@
+.rpc-selector {
+  position: fixed;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.rpc-selector-button {
+  padding: 0.25rem;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.rpc-selector-button-active {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}

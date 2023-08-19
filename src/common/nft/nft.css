@@ -1,0 +1,9 @@
+.nft-image {
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 6rem;
+  height: 6rem;
+
+  animation: small-glow 3s ease-in-out infinite alternate;
+}

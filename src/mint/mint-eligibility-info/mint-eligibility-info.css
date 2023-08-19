@@ -1,0 +1,33 @@
+.mint-eligibility {
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mint-eligibility-title {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.mint-eligibility-condition-invalid {
+  color: var(--warning-color);
+  list-style-type: circle;
+}
+
+.mint-eligibility-condition em {
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: bold;
+}
+.mint-eligibility-condition-invalid em {
+  color: var(--warning-color);
+}
+
+.mint-eligibility-token {
+  width: 1rem;
+  height: 1rem;
+}

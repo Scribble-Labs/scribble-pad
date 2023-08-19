@@ -1,0 +1,11 @@
+.transfer-tokens {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.transfer-tokens-token {
+  width: 3rem;
+  height: 3rem;
+}

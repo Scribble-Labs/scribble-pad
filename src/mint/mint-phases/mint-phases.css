@@ -1,0 +1,67 @@
+.mint-phases {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.mint-phases-phase {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  opacity: 0.5;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "label . date"
+    "price max date";
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem 1rem;
+  transition: var(--transition);
+  height: 8em;
+  margin-bottom: 1.5rem;
+  background-color: #e0daed;
+}
+.mint-phases-phase-active {
+  opacity: 1;
+  color: black;
+}
+.mint-phases-phase-label {
+  grid-area: label;
+  text-align: left;
+  font-size: 1rem;
+  font-family: var(--special-font);
+  font-weight: bold;
+}
+.mint-phases-phase-max {
+  grid-area: max;
+}
+.mint-phases-phase-price {
+  grid-area: price;
+  text-align: left;
+}
+.mint-phases-phase-date {
+  grid-area: date;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.mint-phases-phase-date-title {
+  text-align: right;
+}
+.mint-phases-phase-countdown {
+  gap: 0.25rem;
+}
+.mint-phases-phase-countdown-item {
+  padding: unset;
+  filter: unset;
+  gap: 0.25rem;
+  width: unset;
+  border: unset;
+  flex-direction: row;
+  background-color: unset;
+}
+.mint-phases-phase-countdown-item-value {
+  font-size: 1rem;
+}

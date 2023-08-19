@@ -1,0 +1,12 @@
+:root {
+  --logo-size: 8rem;
+}
+
+.logo {
+  width: 90%;
+  max-width: 40rem;
+  height: var(--logo-size);
+  object-fit: contain;
+  position: relative;
+  margin: 1rem auto;
+}

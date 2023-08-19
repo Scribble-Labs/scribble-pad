@@ -1,0 +1,33 @@
+.site-header {
+  position: relative;
+  width: 100vw;
+  height: 10vh; /* 1/8th of the viewport height */
+  background: transparent;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 2.5%;
+  right: 2.5%;
+  bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+.connect-wallet {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+  background: #eeeeee;
+}

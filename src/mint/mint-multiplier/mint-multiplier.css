@@ -1,0 +1,54 @@
+.mint-multiplier {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mint-multiplier-selector {
+  width: 100%;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: stretch;
+  overflow: clip;
+}
+button.mint-multiplier-selector-action {
+  border-radius: unset;
+  padding: 0.5rem;
+  width: 3rem;
+}
+.mint-multiplier-selector input {
+  border: unset;
+  outline: unset;
+  flex: 1;
+  width: 100%;
+  background-color: transparent;
+  color: var(--text-color);
+  text-align: center;
+  font-family: var(--special-font);
+  margin-left: 1rem;
+}
+.mint-multiplier-selector-total {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-family: var(--special-font);
+  font-size: 1.25rem;
+}
+
+button.mint-multiplier-selector-max {
+  align-self: center;
+  margin: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+}
+
+button.mint-multiplier-selector-action {
+  font-family: var(--default-font);
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.mint-multiplier-selector input {
+  font-size: 2rem;
+}
